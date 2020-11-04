@@ -4,6 +4,7 @@
    box-sizing: border-box;
 }
 
+
 .main-wrapper {
    width: 100%;
    max-width: 1920px;
@@ -12,9 +13,10 @@
 }
 
 
+/**********************************HEADER*********************************/
+
 header {
    width: 100%;
-
    /*Say thanks 🙌
    Give a shoutout to Lukas Blazek on social or copy the text below to attribute.
    Photo by Lukas Blazek on Unsplash*/
@@ -25,15 +27,14 @@ header {
    background-size: cover; 
 }
 
+
 .header-container {
    width: 100%;
    margin: 0 auto;
    justify-content: center;
    align-items: center;
    text-align: center;
-   
 }
-
 
 
 .header-logo-outer-container {
@@ -75,9 +76,9 @@ header {
 
 .header-h3 {
    font-size: 35px;
-   font-weight: 500;
+   font-weight: 600;
    color: rgba(17, 17, 17, 0.705);
-   letter-spacing: 1px;
+   letter-spacing: 2px;
    font-family: 'Great Vibes', cursive;
 }
 
@@ -85,20 +86,21 @@ header {
 nav {
    width: 100%;
    margin-top: 430px;
-   padding-bottom: 40px;
-   
+   padding-bottom: 40px;   
 }
 
+
 ul {
-   
    width: 50%;
    margin: 0 auto;
 }
+
 
 li{
    display: inline-block;
    padding: 10px 20px;
 }
+
 
 .header-a-nav {
    text-decoration: none;
@@ -109,10 +111,70 @@ li{
    font-family: 'Playfair Display', serif;
 }
 
+
 .header-a-nav:hover {
    color: rgba(17, 17, 17, 0.466);
    transition: 0.4s;
 }
+
+
+/****************************HEADER-MEDIA-QUERIES****************************/
+
+
+@media screen and (max-width: 1800px) and (min-width: 850px){
+
+
+   nav {
+      margin-top: 330px;
+      padding-bottom: 40px;   
+   }   
+
+
+   ul {
+      width: 100%;
+   }
+
+
+   li{
+      padding: 10px 10px;
+   }
+
+
+   .header-a-nav {
+      font-size: 17px;
+      letter-spacing: 1px;
+   }
+}
+
+
+/****************************HEADER-MEDIA-QUERIES****************************/
+
+
+@media screen and (max-width: 850px) and (min-width: 560px){
+
+
+   nav {
+      margin-top: 330px;
+      padding-bottom: 40px;   
+   }   
+
+
+   ul {
+      width: 100%;
+   }
+
+
+   li{
+      padding: 10px 10px;
+   }
+
+
+   .header-a-nav {
+      font-size: 17px;
+      letter-spacing: 1px;
+   }
+}
+/***************************END_OF_HEADER************************/
 
 
 section {
@@ -121,11 +183,13 @@ section {
    background-color: rgba(152, 250, 152, 0.144);
 }
 
+
 div {
    width: 80%;
    margin: 0 auto;
    justify-content: center;
 }
+
 
 .header-p {
    text-align: center;
@@ -137,6 +201,5 @@ div {
    color: rgba(17, 17, 17, 0.507);
    font-family: 'Playfair Display', serif;
 }
-
 
 
