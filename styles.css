@@ -9,3 +9,22 @@
    max-width: 1920px;
    margin: 0 auto;
 }
+
+.category {
+   width: 60%;
+   background-color: aqua;
+   margin: 0 auto;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+}
+
+.category__content {
+   width: 100%;
+   height: 80%;
+   background-color: blueviolet;
+}
+
+.content__headline {
+   text-align: center;
+}
