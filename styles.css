@@ -33,20 +33,22 @@ header {
 .header-logo-outer-container {
    width: 100%;
    background-color: rgba(255, 255, 255, 0.767);
+   padding: 2px 0;
 }
 
 
 .header-logo-container {
-   width: 100px;
+   width: 70px;
    margin: 0 auto;
-   border: 2px solid #fff;
+   padding: 0 5px;
+   border: 2px solid rgba(32, 31, 31, 0.11);
    border-radius: 50%;
    background-color: rgba(255, 255, 255, 0.726);
 }
 
 
 .header-logo {
-   width: 50px;
+   width: 38px;
    margin: 10px;
    background-color: #fff;
 }
