@@ -13,8 +13,13 @@
 
 header {
    width: 100%;
+
+   /*Say thanks 🙌
+   Give a shoutout to Lukas Blazek on social or copy the text below to attribute.
+   Photo by Lukas Blazek on Unsplash*/
    background-image:  url(img/header-background.jpg);
    background-position: center;
+
    background-repeat: no-repeat;
    background-size: cover; 
 }
@@ -41,7 +46,8 @@ header {
    width: 70px;
    margin: 0 auto;
    padding: 0 5px;
-   border: 2px solid rgba(32, 31, 31, 0.11);
+  /* border: 2px solid rgba(32, 31, 31, 0.11);*/
+   border: 2px solid rgba(152, 250, 152, 0.377);
    border-radius: 50%;
    background-color: rgba(255, 255, 255, 0.726);
 }
