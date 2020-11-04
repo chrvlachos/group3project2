@@ -8,6 +8,7 @@
    width: 100%;
    max-width: 1920px;
    margin: 0 auto;
+   height: 4000px;
 }
 
 
@@ -37,6 +38,7 @@ header {
 
 .header-logo-outer-container {
    width: 100%;
+   position: fixed;
    background-color: rgba(255, 255, 255, 0.767);
    padding: 2px 0;
 }
@@ -82,8 +84,8 @@ header {
 
 nav {
    width: 100%;
-   margin-top: 350px;
-   padding-bottom: 50px;
+   margin-top: 430px;
+   padding-bottom: 40px;
    
 }
 
