@@ -57,7 +57,7 @@ header {
    background-color: #fff;
 }
 
-HEAD .header-h1 {
+.header-h1 {
    padding: 300px 5px 20px 5px;
    font-size: 70px;
    font-weight: 600;
@@ -249,10 +249,17 @@ li {
    line-height: 1.5;
 }
 
-.description__recipe-link a {
+.description__recipe-link {
    font-size: 0.8rem;
    color: #fff;
    text-decoration: none;
+}
+
+.description__recipe-link::before {
+   content: 'test';
+   width: 10px;
+   height: 10px;
+   background-image: url(./img/armin/ARROW.svg);
 }
 
 .share__p {
