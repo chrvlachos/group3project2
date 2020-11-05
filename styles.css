@@ -318,3 +318,106 @@ li {
 .links__icon:hover {
    transform: scale(1.1, 1.1);
 }
+.recipe-container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.recipe-col1{
+    width: 25%;
+    height: 100vh;
+    margin: 0;
+}
+.recipe-col3{
+    width: 25%;
+    height: 100vh;
+    margin: 0;
+}
+.recipe-col2{
+    position: absolute;
+    display: flex;
+    background-color: #f5f5f5;
+    width: 50%;
+    height: 100vh;
+}
+.grey-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%; 
+}
+.recipe-row1-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60%;
+    align-items: left;
+    padding-left: 30px;
+}
+.recipe-row1-right{
+    display: flex;
+    width: 50%;
+    height: 60%;
+    padding-top: 20px;
+    padding-left: 40px;
+    justify-content: center;
+}
+.recipe-row2{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+    align-items: left;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.recipe-img{
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+    height: 200px;
+}
+.recipe-title{
+    font-family: courier, monospace;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+.recipe-list {
+    color: #555;
+    font-size: 12px;
+    padding: 0 !important;
+    width: 105vh;
+    font-family: courier, monospace;
+    border: 1px solid #dedede;
+  }
+.recipe-list li {
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    text-indent: 25px;
+    padding: 10px;
+    text-transform: capitalize;
+  }
+  .list li:hover {
+    background-color: #f0f0f0;
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -ms-transition:     all 0.2s;
+    -o-transition:      all 0.2s;
+  }
+  .lines {
+    border-left: 1px solid #ffaa9f;
+    border-right: 1px solid #ffaa9f;
+    width: 2px;
+    float: left;
+    height: auto;
+    margin-left: 10px;
+  }
+.background-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
