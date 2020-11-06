@@ -56,11 +56,11 @@ cards.forEach(card => {
 /*SHARE-CURRENT-PAGE*/
 const icons = document.querySelectorAll('.links__icon')
 const modals = document.querySelectorAll('.share-modal')
+const closeModal = document.querySelectorAll('.share-modal__close')
 
 function disappearModal(index) {
-    setTimeout(() => function(index){ 
-        console.log('1');
-        
+    setTimeout(() => { 
+        console.log(index);
         modals[index].classList.remove('share-modal--visible')
         }, 5000)
 }
@@ -68,14 +68,38 @@ function disappearModal(index) {
 icons.forEach(icon => {
     icon.addEventListener('click', () => {
        if(icon.classList.contains('share-modal__one')) {
+           console.log('entered');
            modals[0].classList.add('share-modal--visible')
            disappearModal(0);
        }else if(icon.classList.contains('share-modal__two')) {
         modals[1].classList.add('share-modal--visible')
         disappearModal(1);
+       }else if(icon.classList.contains('share-modal__three')) {
+        modals[2].classList.add('share-modal--visible')
+        disappearModal(2);
+       }else if(icon.classList.contains('share-modal__four')) {
+        modals[3].classList.add('share-modal--visible')
+        disappearModal(3);
+       }else if(icon.classList.contains('share-modal__five')) {
+        modals[4].classList.add('share-modal--visible')
+        disappearModal(4);
+       }else if(icon.classList.contains('share-modal__six')) {
+        modals[5].classList.add('share-modal--visible')
+        disappearModal(5);
        }
     })
 })
+
+//Close Modal manually
+closeModal.forEach(x => {
+    x.addEventListener('click', () => {
+        modals.forEach(modal => {
+            modal.classList.remove('share-modal--visible')
+        })
+    })
+})
+
+
 
 
 
