@@ -39,6 +39,7 @@ header {
    background-color: rgba(255, 255, 255, 0.767);
    padding: 2px 0;
    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.31);
+   z-index: 10;
 }
 
 .header-logo-container {
@@ -204,6 +205,7 @@ li {
 .content__headline {
    text-align: center;
    margin-bottom: 1.5rem;
+   font-family: 'Playfair Display', cursive;
 }
 
 .content__grid {
@@ -221,6 +223,7 @@ li {
    background-size: cover;
    color: #fff;
    overflow: hidden;
+   position: relative;
 }
 
 .grid__item--picture1 {
@@ -245,6 +248,38 @@ li {
 
 .grid__item--picture6 {
    background-image: url(./img/armin/pasta6.jpg);
+}
+
+.share-modal {
+   display: none;
+   transition: all 0.3s ease-in-out;
+}
+
+.share-modal__close {
+   display: inline-block;
+   align-self: end;
+   margin-right: 10px;
+   padding: 3px;
+   border: 1px solid #fff;
+   border-radius: 3px;
+}
+
+.share-modal__h4 {
+}
+
+.share-modal--visible {
+   display: block;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 280px;
+   height: 80px;
+   background-color: coral;
+   z-index: 5;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .item__description {
