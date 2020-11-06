@@ -263,6 +263,12 @@ li {
    border: 1px solid #fff;
    border-radius: 3px;
    cursor: pointer;
+   font-size: 0.7rem;
+}
+
+.share-modal__h4 {
+   font-family: 'Great Vibes', cursive;
+   font-size: 2rem;
 }
 
 .share-modal--visible {
@@ -271,13 +277,26 @@ li {
    top: 50%;
    transform: translateY(-50%);
    width: 280px;
-   height: 80px;
-   background-color: coral;
+   height: 280px;
+   background-color: rgb(136, 182, 136);
    z-index: 5;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
+}
+
+.share-modal--dynamic {
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.share-modal--dynamic img {
+   width: 50px;
+   cursor: pointer;
 }
 
 .item__description {
@@ -308,6 +327,7 @@ li {
 
 .description__h4 {
    font-size: 1.5rem;
+   color: rgb(94, 179, 94);
 }
 
 .description__p {
@@ -334,6 +354,7 @@ li {
    font-size: 0.8rem;
    color: #fff;
    text-decoration: none;
+   color: rgb(94, 179, 94);
 }
 
 .share__p {
