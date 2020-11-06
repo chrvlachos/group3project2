@@ -309,10 +309,13 @@ li {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> k
 
 /**********************SECTION-QUOTE_ONE*********************/
 
@@ -340,6 +343,49 @@ li {
    text-align: center;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+.quote-sec-1-p {
+   padding-top: 50px;
+   padding-left: 20px;
+   font-size: 23px;
+   font-weight: 700;
+   color: rgba(17, 17, 17, 0.507);
+   font-family: 'Playfair Display', serif;
+}
+
+
+.sec-quote-img {
+   border-radius: 5px;
+   transform: rotate(-25deg);
+   box-shadow: -8px 8px 15px -6px rgba(17, 17, 17, 0.89);
+   animation: img 2s linear infinite alternate;
+}
+
+@keyframes img {
+   100% {
+      transform: rotate(-15deg) scale(1.1);
+   }
+}
+
+
+
+
+
+.links__link {
+   text-decoration: none;
+}
+
+.links__icon {
+   transition: all 0.2s ease-in-out;
+}
+
+.links__icon:hover {
+   transform: scale(1.1, 1.1);
+}
+>>>>>>> k
 .recipe-container{
     display: flex;
     justify-content: center;
@@ -480,4 +526,8 @@ li {
 >>>>>>> k
 =======
 }
+<<<<<<< HEAD
 >>>>>>> 62776f62bb66b7813146440f947f4219ef1d43c0
+=======
+
+>>>>>>> k
