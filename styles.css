@@ -190,6 +190,7 @@ li {
    margin: 0 auto;
    height: 100vh;
    display: flex;
+   flex-direction: column;
    align-items: center;
 }
 
@@ -372,4 +373,14 @@ li {
 
 .links__icon:hover {
    transform: scale(1.1, 1.1);
+}
+
+.nav2 {
+   margin-top: 0;
+   padding-bottom: 0;
+}
+
+.ul2 {
+   display: flex;
+   justify-content: center;
 }

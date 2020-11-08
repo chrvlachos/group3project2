@@ -151,7 +151,184 @@ closeModal.forEach(x => {
     })
 })
 
-/*GET DYNAMIC SHARE-SERVICE AND LINK*/
+/*GET DYNAMIC CONTENT*/
+const recipes = [
+    [
+    //six times pasta
+    {
+        'recipeTitle': 'Bolognese1',
+        'recipeDescription': 'Classic Bolognese',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/pasta.jpg'
+        },
+    {
+        'recipeTitle': 'Seafood Pasta',
+        'recipeDescription': 'Classic Bolognese',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/pasta2.jpg'
+        },
+    {
+        'recipeTitle': 'Bolognese3',
+        'recipeDescription': 'Classic Bolognese',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/pasta3.jpg'
+        },
+    {
+        'recipeTitle': 'Bolognese4',
+        'recipeDescription': 'Classic Bolognese',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/pasta4.jpg'
+        },
+    {
+        'recipeTitle': 'Bolognese5',
+        'recipeDescription': 'Classic Bolognese',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/pasta5.jpg'
+        },
+    {
+        'recipeTitle': 'Bolognese6',
+        'recipeDescription': 'Classic Bolognese',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/pasta6.jpg'
+        }
+    ],
+    [
+    //six times simplicity
+    {
+        'recipeTitle': 'Simplicity1',
+        'recipeDescription': 'Sooo simple1!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/simple1.jpg'
+        },
+    {
+        'recipeTitle': 'Simplicity2',
+        'recipeDescription': 'Sooo simple2!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/simple2.jpg'
+        },
+    {
+        'recipeTitle': 'Simplicity3',
+        'recipeDescription': 'Sooo simple3!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/simple3.jpg'
+        },
+    {
+        'recipeTitle': 'Simplicity4',
+        'recipeDescription': 'Sooo simple4!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/simple4.jpg'
+        },
+    {
+        'recipeTitle': 'Simplicity5',
+        'recipeDescription': 'Sooo simple!5',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/simple5.jpg'
+        },
+    {
+        'recipeTitle': 'Simplicity6',
+        'recipeDescription': 'Sooo simple6!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/simple6.jpg'
+        }
+    ],
+    [
+    //six times bar&grill
+    {
+        'recipeTitle': 'Bar&Grill1',
+        'recipeDescription': 'Say Cheese1!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/grill1.jpg'
+        },
+    {
+        'recipeTitle': 'Bar&Grill2',
+        'recipeDescription': 'Say Cheese2!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/grill2.jpg'
+        },
+    {
+        'recipeTitle': 'Bar&Grill3',
+        'recipeDescription': 'Say Cheese3!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/grill3.jpg'
+        },
+    {
+        'recipeTitle': 'Bar&Grill4',
+        'recipeDescription': 'Say Cheese4!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/grill4.jpg'
+        },
+    {
+        'recipeTitle': 'Bar&Grill5',
+        'recipeDescription': 'Say Cheese5!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/grill5.jpg'
+        },
+    {
+        'recipeTitle': 'Bar&Grill6',
+        'recipeDescription': 'Say Cheese6!',
+        'recipeLink': 'linkAdress',
+        'image': 'url(./img/armin/grill6.jpg'
+        }
+    ]
+] 
+
+const itemDescriptions = document.querySelectorAll('.item__description')
+const pastaNav =document.getElementById('pasta-nav')
+const simplicityNav = document.getElementById('simplicity-nav');
+const barGrillNav = document.getElementById('bar-grill');
+const sectionHeadline = document.querySelector('.content__headline')
+
+
+
+pastaNav.addEventListener('click', () => {
+    sectionHeadline.innerHTML = 'Pasta Dishes'
+    for (let i = 0; i < recipes[0].length; i++) {
+        for (let j = 0; j < itemDescriptions.length; j++) {
+            //title
+            itemDescriptions[i].firstElementChild.nextElementSibling.innerHTML = recipes[0][i].recipeTitle;
+            //description
+            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.innerHTML = recipes[0][i].recipeDescription
+            //link
+            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.innerHTML = recipes[0][i].recipeLink
+            //bg-image
+            itemDescriptions[i].parentElement.style.backgroundImage = recipes[0][i].image
+        }
+    }
+})
+
+simplicityNav.addEventListener('click', () => {
+    sectionHeadline.innerHTML = 'Simple Stuff'
+    for (let i = 0; i < recipes[1].length; i++) {
+        for (let j = 0; j < itemDescriptions.length; j++) {
+            //title
+            itemDescriptions[i].firstElementChild.nextElementSibling.innerHTML = recipes[1][i].recipeTitle;
+            //description
+            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.innerHTML = recipes[1][i].recipeDescription
+            //link
+            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.innerHTML = recipes[1][i].recipeLink
+            //bg-image
+            itemDescriptions[i].parentElement.style.backgroundImage = recipes[1][i].image
+        }
+    }
+})
+
+barGrillNav.addEventListener('click', () => {
+    sectionHeadline.innerHTML = 'Bar & Grill'
+    for (let i = 0; i < recipes[2].length; i++) {
+        for (let j = 0; j < itemDescriptions.length; j++) {
+            //title
+            itemDescriptions[i].firstElementChild.nextElementSibling.innerHTML = recipes[2][i].recipeTitle;
+            //description
+            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.innerHTML = recipes[2][i].recipeDescription
+            //link
+            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.innerHTML = recipes[2][i].recipeLink
+            //bg-image
+            itemDescriptions[i].parentElement.style.backgroundImage = recipes[2][i].image
+        }
+    }
+})
+
+
 
 
 
