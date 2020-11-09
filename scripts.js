@@ -152,6 +152,7 @@ closeModal.forEach(x => {
 })
 
 /*GET DYNAMIC CONTENT*/
+//DATA STRUCTURE
 const recipes = [
     [
     //six times pasta
@@ -277,8 +278,6 @@ const pastaNav =document.getElementById('pasta-nav')
 const simplicityNav = document.getElementById('simplicity-nav');
 const barGrillNav = document.getElementById('bar-grill');
 const sectionHeadline = document.querySelector('.content__headline')
-
-
 
 pastaNav.addEventListener('click', () => {
     sectionHeadline.innerHTML = 'Pasta Dishes'
