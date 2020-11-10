@@ -159,37 +159,37 @@ const recipes = [
     {
         'recipeTitle': 'Bolognese1',
         'recipeDescription': 'Classic Bolognese',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './pasta.hmtl',
         'image': 'url(./img/armin/pasta.jpg'
         },
     {
         'recipeTitle': 'Seafood Pasta',
         'recipeDescription': 'Classic Bolognese',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './pasta.html',
         'image': 'url(./img/armin/pasta2.jpg'
         },
     {
         'recipeTitle': 'Bolognese3',
         'recipeDescription': 'Classic Bolognese',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './pasta.html',
         'image': 'url(./img/armin/pasta3.jpg'
         },
     {
         'recipeTitle': 'Bolognese4',
         'recipeDescription': 'Classic Bolognese',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './pasta.html',
         'image': 'url(./img/armin/pasta4.jpg'
         },
     {
         'recipeTitle': 'Bolognese5',
         'recipeDescription': 'Classic Bolognese',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './pasta.html',
         'image': 'url(./img/armin/pasta5.jpg'
         },
     {
         'recipeTitle': 'Bolognese6',
         'recipeDescription': 'Classic Bolognese',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './pasta.html',
         'image': 'url(./img/armin/pasta6.jpg'
         }
     ],
@@ -288,7 +288,7 @@ pastaNav.addEventListener('click', () => {
             //description
             itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.innerHTML = recipes[0][i].recipeDescription
             //link
-            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.innerHTML = recipes[0][i].recipeLink
+            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.href = recipes[0][i].recipeLink
             //bg-image
             itemDescriptions[i].parentElement.style.backgroundImage = recipes[0][i].image
         }
@@ -304,7 +304,7 @@ simplicityNav.addEventListener('click', () => {
             //description
             itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.innerHTML = recipes[1][i].recipeDescription
             //link
-            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.innerHTML = recipes[1][i].recipeLink
+            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.href = recipes[1][i].recipeLink
             //bg-image
             itemDescriptions[i].parentElement.style.backgroundImage = recipes[1][i].image
         }
@@ -320,7 +320,7 @@ barGrillNav.addEventListener('click', () => {
             //description
             itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.innerHTML = recipes[2][i].recipeDescription
             //link
-            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.innerHTML = recipes[2][i].recipeLink
+            itemDescriptions[i].firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.href = recipes[2][i].recipeLink
             //bg-image
             itemDescriptions[i].parentElement.style.backgroundImage = recipes[2][i].image
         }
