@@ -666,6 +666,11 @@ li {
    height: 100%;
 }
 
+.button-center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 .button-pasta {
    color: #fff;
    font-size: 19px;
@@ -675,7 +680,7 @@ li {
    border-radius: 5px;
    text-decoration: none;
    text-align: center;
-   display: inline-block;
+   max-width: 300px;
 }
 
 .button-pasta:hover {
