@@ -78,7 +78,7 @@ header {
 nav {
    width: 100%;
    margin-top: 430px;
-   padding-bottom: 40px;
+   padding-bottom: 35px;
 }
 
 ul {
@@ -94,7 +94,7 @@ li {
 .header-a-nav {
    text-decoration: none;
    color: rgba(17, 17, 17, 0.74);
-   font-size: 21px;
+   font-size: 40px;
    letter-spacing: 1px;
    font-weight: 700;
    font-family: 'Playfair Display', serif;
@@ -217,7 +217,9 @@ li {
 .content__headline {
    text-align: center;
    margin-bottom: 1.5rem;
-   font-family: 'Playfair Display', cursive;
+   color: #fff;
+   font-size: 35px;
+   font-family: 'Great Vibes', cursive;
 }
 
 .content__grid {
@@ -383,6 +385,19 @@ li {
    justify-content: center;
 }
 
+.two {
+   font-family: 'Great Vibes', cursive;
+   font-size: 28px;
+   letter-spacing: 5px;
+   font-weight: 600;
+   color: #fff;
+}
+
+.two:hover {
+   color: #f0feef;
+   opacity: 0.6;
+}
+
 
 
 /**********************SECTION-QUOTE_ONE*********************/
@@ -390,7 +405,7 @@ li {
 .sec-quote {
    width: 100%;
    height: 450px;
-   background-color: rgba(152, 250, 152, 0.144);
+   background-color: #f0feef;
 }
 
 .quote-container {
@@ -438,6 +453,11 @@ li {
    transform: rotate(-25deg) scale(1.1);
    box-shadow: -8px 16px 10px -8px rgba(0, 0, 0, 0.4);
    animation: img 2s linear infinite alternate;
+}
+
+.footer-p {
+   text-align: center;
+   padding-top: 100px;
 }
 
 
