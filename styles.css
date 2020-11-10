@@ -628,11 +628,13 @@ li {
 
 .recipe-list {
    color: #555;
-   font-size: 12px;
    padding: 0 !important;
    font-family: courier, monospace;
    display: flex;
    flex-direction: column;
+   font-size: 12px;
+   letter-spacing: 1px;
+   word-spacing: 2px;
 }
 
 .recipe-list li {
@@ -641,6 +643,7 @@ li {
    text-indent: 25px;
    padding: 10px;
    text-transform: capitalize;
+   font-size: 22px;
 }
 
 .list li:hover {
@@ -677,6 +680,7 @@ li {
    border: 1px solid #fff;
    background-color: rgba(17, 17, 17, 0.534);
    padding: 8px;
+   margin-top: 100px;
    border-radius: 5px;
    text-decoration: none;
    text-align: center;
@@ -784,13 +788,33 @@ li {
     border: 1px solid white;
     border-radius: 4px;
     padding: 5px;
-    width: 250px;
-    height: 200px;
+    margin-right: 60px;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
 }
 
+@media screen and (max-width: 1400px) and (min-width: 1100px){
+   .recipe-img{
+      width: 300px;
+      height: 400px;
+  }
+}
+
+
+  @media screen and (max-width: 1100px) and (min-width: 800px){
+   .recipe-img{
+      width: 200px;
+      height: 300px;
+      margin-right: 0px;
+  }
+}
+
+
 .recipe-title{
-   font-family: 'Handlee', cursive;
-    font-weight: normal;
+    font-size: 30px;
+    font-family: 'Handlee', cursive;
+    font-weight: 600;
     padding-top: 10px;
     padding-bottom: 10px;
     float: left;
@@ -800,6 +824,7 @@ li {
     color: #555;
     font-size: 13px;
     font-weight: bold;
+    line-height: 20px;
     padding: 0 !important;
     font-family: 'Handlee', cursive;
     display: flex;
