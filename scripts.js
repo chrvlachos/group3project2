@@ -159,7 +159,7 @@ const recipes = [
     {
         'recipeTitle': 'Bolognese1',
         'recipeDescription': 'Classic Bolognese',
-        'recipeLink': './pasta.hmtl',
+        'recipeLink': './pasta.html',
         'image': 'url(./img/armin/pasta.jpg'
         },
     {
@@ -237,37 +237,37 @@ const recipes = [
     {
         'recipeTitle': 'Bar&Grill1',
         'recipeDescription': 'Say Cheese1!',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './grill.html',
         'image': 'url(./img/armin/grill1.jpg'
         },
     {
         'recipeTitle': 'Bar&Grill2',
         'recipeDescription': 'Say Cheese2!',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './grill.html',
         'image': 'url(./img/armin/grill2.jpg'
         },
     {
         'recipeTitle': 'Bar&Grill3',
         'recipeDescription': 'Say Cheese3!',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './grill.html',
         'image': 'url(./img/armin/grill3.jpg'
         },
     {
         'recipeTitle': 'Bar&Grill4',
         'recipeDescription': 'Say Cheese4!',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './grill.html',
         'image': 'url(./img/armin/grill4.jpg'
         },
     {
         'recipeTitle': 'Bar&Grill5',
         'recipeDescription': 'Say Cheese5!',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './grill.html',
         'image': 'url(./img/armin/grill5.jpg'
         },
     {
         'recipeTitle': 'Bar&Grill6',
         'recipeDescription': 'Say Cheese6!',
-        'recipeLink': 'linkAdress',
+        'recipeLink': './grill.html',
         'image': 'url(./img/armin/grill6.jpg'
         }
     ]
