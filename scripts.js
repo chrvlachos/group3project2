@@ -159,7 +159,7 @@ const recipes = [
     {
         'recipeTitle': 'Bolognese1',
         'recipeDescription': 'Classic Bolognese',
-        'recipeLink': './pasta.hmtl',
+        'recipeLink': './pasta.html',
         'image': 'url(./img/armin/pasta.jpg'
         },
     {
