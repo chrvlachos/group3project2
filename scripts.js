@@ -278,9 +278,11 @@ const pastaNav =document.getElementById('pasta-nav')
 const simplicityNav = document.getElementById('simplicity-nav');
 const barGrillNav = document.getElementById('bar-grill');
 const sectionHeadline = document.querySelector('.content__headline')
+const sectionBackground = document.querySelector('.category--background')
 
 pastaNav.addEventListener('click', () => {
     sectionHeadline.innerHTML = 'Pasta Dishes'
+    sectionBackground.style.backgroundImage = 'url(./img/italy.jpg)'
     for (let i = 0; i < recipes[0].length; i++) {
         for (let j = 0; j < itemDescriptions.length; j++) {
             //title
@@ -297,6 +299,7 @@ pastaNav.addEventListener('click', () => {
 
 simplicityNav.addEventListener('click', () => {
     sectionHeadline.innerHTML = 'Simple Stuff'
+    sectionBackground.style.backgroundImage = 'url(./img/armin/deli.jpg)'
     for (let i = 0; i < recipes[1].length; i++) {
         for (let j = 0; j < itemDescriptions.length; j++) {
             //title
@@ -313,6 +316,7 @@ simplicityNav.addEventListener('click', () => {
 
 barGrillNav.addEventListener('click', () => {
     sectionHeadline.innerHTML = 'Bar & Grill'
+    sectionBackground.style.backgroundImage = 'url(./img/armin/diner.jpg)'
     for (let i = 0; i < recipes[2].length; i++) {
         for (let j = 0; j < itemDescriptions.length; j++) {
             //title
